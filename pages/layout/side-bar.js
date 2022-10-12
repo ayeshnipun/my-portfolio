@@ -1,18 +1,20 @@
 import React from "react";
 import {
-    FaFacebookF,
-    FaTwitter,
-    FaLinkedinIn,
-    FaInstagram,
-    FaStackOverflow, FaMediumM
-  } from "react-icons/fa"
-  
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaStackOverflow,
+  FaMediumM,
+} from "react-icons/fa";
+
 const SideBar = () => {
   return (
     <div>
       <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
         <div className="fixed flex flex-col top-0 left-0 w-64 bg-gray-900 h-full shadow-lg">
-          <div className="overflow-y-auto overflow-x-hidden flex-grow">
+          <div className="h-20"></div>
+          <div className="overflow-y-auto overflow-x-hidden flex-grow align-middle">
             <ul className="flex-col py-6 space-y-1">
               <li>
                 <a
@@ -114,31 +116,50 @@ const SideBar = () => {
           <div className="items-end h-10 mb-7 text-center">
             <ul className="inline-block">
               <li className="inline-block mr-5">
-                <a className="" href="https://nipun-yesh.medium.com/" target="blank">
-                  <FaMediumM className="text-gray-500 hover:text-gray-200"/>
+                <a
+                  className=""
+                  href="https://nipun-yesh.medium.com/"
+                  target="blank"
+                >
+                  <FaMediumM className="text-gray-500 hover:text-gray-200" />
                 </a>
               </li>
               <li className="inline-block mr-5">
-                <a className="" href="https://nipun-yesh.medium.com/" target="blank">
-                  <FaTwitter className="text-gray-500 hover:text-gray-200"/>
+                <a
+                  className=""
+                  href="https://twitter.com/bladeB0ss"
+                  target="blank"
+                >
+                  <FaTwitter className="text-gray-500 hover:text-gray-200" />
                 </a>
               </li>
               <li className="inline-block mr-5">
-                <a className="" href="https://www.linkedin.com/in/ayeshnipun/" target="blank">
-                  <FaLinkedinIn className="text-gray-500 hover:text-gray-200"/>
+                <a
+                  className=""
+                  href="https://www.linkedin.com/in/ayeshnipun/"
+                  target="blank"
+                >
+                  <FaLinkedinIn className="text-gray-500 hover:text-gray-200" />
                 </a>
               </li>
               <li className="inline-block mr-5">
-                <a className="" href="https://nipun-yesh.medium.com/" target="blank">
-                  <FaInstagram className="text-gray-500 hover:text-gray-200"/>
+                <a
+                  className=""
+                  href="https://www.instagram.com/bl_ad_e/"
+                  target="blank"
+                >
+                  <FaInstagram className="text-gray-500 hover:text-gray-200" />
                 </a>
               </li>
               <li className="inline-block mr-5">
-                <a className="" href="https://stackoverflow.com/users/11142587/ayesh-nipun" target="blank">
-                  <FaStackOverflow className="text-gray-500 hover:text-gray-200"/>
+                <a
+                  className=""
+                  href="https://stackoverflow.com/users/11142587/ayesh-nipun"
+                  target="blank"
+                >
+                  <FaStackOverflow className="text-gray-500 hover:text-gray-200" />
                 </a>
               </li>
-              
             </ul>
           </div>
         </div>
