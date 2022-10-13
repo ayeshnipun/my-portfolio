@@ -20,12 +20,17 @@ a {
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-@font-face{
-  font-family: "burtons"
+.bg-hero {
+  background-image: url("/images/home-wp.png");
+  opacity: 0.2;
+}
+
+@font-face {
+  font-family: "burtons";
 }
 
 @media (prefers-color-scheme: dark) {
