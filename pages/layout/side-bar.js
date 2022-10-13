@@ -12,9 +12,9 @@ const SideBar = () => {
   return (
     <div>
       <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
-        <div className="fixed flex flex-col top-0 left-0 w-64 bg-gray-900 h-full shadow-lg">
-          <div className="h-20"></div>
-          <div className="overflow-y-auto overflow-x-hidden flex-grow align-middle">
+        <div className="fixed flex justify-center flex-col top-0 left-0 w-64 bg-gray-900 h-full shadow-lg">
+          {/* <div className="h-20"></div> */}
+          <div className="overflow-y-auto overflow-x-hidden items-center">
             <ul className="flex-col py-6 space-y-1">
               <li>
                 <a
@@ -113,7 +113,7 @@ const SideBar = () => {
             </ul>
           </div>
 
-          <div className="items-end h-10 mb-7 text-center">
+          <div className="items-end h-10 mt-20 text-center bottom-0">
             <ul className="inline-block">
               <li className="inline-block mr-5">
                 <a
