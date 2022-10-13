@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Home = () => {
+const HomeSection = () => {
   return (
-    <div>Home</div>
+    <div className='text-red-500 bg-white'>Home</div>
   )
 }
 
-export default Home
+export default HomeSection
