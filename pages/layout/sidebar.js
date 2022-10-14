@@ -10,9 +10,9 @@ import {
 
 const Sider = () => {
   return (
-    <div class="min-h-screen w-64 absolute sm:relative bg-gray-800 shadow md:h-full flex-col flex-auto flex">
-      <div class="px-8 h-full flex flex-col flex-grow items-center">
-        <ul class="mt-12">
+    <>
+      <div className="px-8 h-full flex flex-col flex-grow items-center">
+        <ul className="mt-12">
           <li>
             <a
               href="#"
@@ -81,9 +81,9 @@ const Sider = () => {
         </ul>
       </div>
 
-      <div class="px-8 justify-center items-center">
-        <ul class="w-full flex items-center bg-gray-800 text-xl">
-          <li class="pt-5 pb-3 mr-5">
+      <div className="px-8 justify-center items-center">
+        <ul className="w-full flex items-center bg-gray-800 text-xl">
+          <li className="pt-5 pb-3 mr-5">
             <a
               className=""
               href="https://nipun-yesh.medium.com/"
@@ -92,12 +92,12 @@ const Sider = () => {
               <FaMediumM className="text-gray-500 hover:text-gray-200" />
             </a>
           </li>
-          <li class="pt-5 pb-3 mr-5">
+          <li className="pt-5 pb-3 mr-5">
             <a className="" href="https://twitter.com/bladeB0ss" target="blank">
               <FaTwitter className="text-gray-500 hover:text-gray-200" />
             </a>
           </li>
-          <li class="pt-5 pb-3 mr-5">
+          <li className="pt-5 pb-3 mr-5">
             <a
               className=""
               href="https://www.linkedin.com/in/ayeshnipun/"
@@ -106,7 +106,7 @@ const Sider = () => {
               <FaLinkedinIn className="text-gray-500 hover:text-gray-200" />
             </a>
           </li>
-          <li class="pt-5 pb-3 mr-5">
+          <li className="pt-5 pb-3 mr-5">
             <a
               className=""
               href="https://www.instagram.com/bl_ad_e/"
@@ -115,7 +115,7 @@ const Sider = () => {
               <FaInstagram className="text-gray-500 hover:text-gray-200" />
             </a>
           </li>
-          <li class="pt-5 pb-3 mr-5">
+          <li className="pt-5 pb-3 mr-5">
             <a
               className=""
               href="https://stackoverflow.com/users/11142587/ayesh-nipun"
@@ -126,7 +126,7 @@ const Sider = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -19,14 +19,10 @@ a {
   box-sizing: border-box;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
 
 .bg-hero {
   background-image: url("/images/home-wp.png");
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 @font-face {
