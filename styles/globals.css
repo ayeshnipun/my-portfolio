@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -19,14 +18,17 @@ a {
   box-sizing: border-box;
 }
 
-
 .bg-hero {
-  background-image: url("/images/home-wp.png");
-  opacity: 0.4;
+  background-image: url("/images/back-wp.jpg");
+}
+
+.is-current {
+  color: white;
 }
 
 @font-face {
-  font-family: "burtons";
+  font-family: 'Ubuntu';
+  src: url("../assets/Ubuntu/Ubuntu-Medium.ttf");
 }
 
 @media (prefers-color-scheme: dark) {

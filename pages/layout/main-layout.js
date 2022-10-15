@@ -4,7 +4,7 @@ import Sider from "./sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="flex">
+    <div className="flex font-mono">
       <SideBar />
 
       <main className="flex-1">

@@ -9,6 +9,7 @@ import {
   FaAngleDoubleLeft,
   FaBars,
 } from "react-icons/fa";
+import Scrollspy from "react-scrollspy";
 
 const SideBar = () => {
   const hideSideBar = () => {
@@ -21,11 +22,14 @@ const SideBar = () => {
   };
   return (
     <>
-      <div id="sidebarshow" className="fixed text-4xl top-5 left-4 lg:hidden md:hidden" >
+      <div
+        id="sidebarshow"
+        className="fixed text-4xl top-5 left-4 lg:hidden md:hidden"
+      >
         <FaBars
-            className="text-gray-500 hover:text-gray-200 cursor-pointer"
-            onClick={showSideBar}
-          />
+          className="text-gray-500 hover:text-gray-200 cursor-pointer"
+          onClick={showSideBar}
+        />
       </div>
       <aside id="sidebar" className="h-screen w-72 sticky top-0 bg-gray-900">
         <div className="grid h-1/6 justify-end px-5 pt-5">
@@ -35,13 +39,18 @@ const SideBar = () => {
           />
         </div>
         <div className="grid place-items-center h-4/6">
-          <ul className="">
+          <Scrollspy
+            items={["home", "about", "portfolio", "skills", "blogs", "contact"]}
+            currentClassName="is-current"
+            className=""
+            offset={-200}
+          >
             <li>
               <a
-                href="#"
+                href="#home"
                 className="relative flex justify-center flex-row items-center h-11 focus:outline-none text-gray-500 hover:text-gray-200 border-transparent pr-6"
               >
-                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-sans">
+                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-ubuntu">
                   Home
                 </span>
               </a>
@@ -52,7 +61,7 @@ const SideBar = () => {
                 href="#about"
                 className="relative flex justify-center flex-row items-center h-11 focus:outline-none text-gray-500 hover:text-gray-200 border-transparent pr-6"
               >
-                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-sans">
+                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-ubuntu">
                   About
                 </span>
               </a>
@@ -63,7 +72,7 @@ const SideBar = () => {
                 href="#portfolio"
                 className="relative flex justify-center flex-row items-center h-11 focus:outline-none text-gray-500 hover:text-gray-200 border-transparent pr-6"
               >
-                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-sans">
+                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-ubuntu">
                   Portfolio
                 </span>
               </a>
@@ -74,7 +83,7 @@ const SideBar = () => {
                 href="#skills"
                 className="relative flex justify-center flex-row items-center h-11 focus:outline-none text-gray-500 hover:text-gray-200 border-transparent pr-6"
               >
-                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-sans">
+                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-ubuntu">
                   Skills
                 </span>
               </a>
@@ -85,7 +94,7 @@ const SideBar = () => {
                 href="#blogs"
                 className="relative flex justify-center flex-row items-center h-11 focus:outline-none text-gray-500 hover:text-gray-200 border-transparent pr-6"
               >
-                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-sans">
+                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-ubuntu">
                   Blogs
                 </span>
               </a>
@@ -96,12 +105,12 @@ const SideBar = () => {
                 href="#contact"
                 className="relative flex justify-center flex-row items-center h-11 focus:outline-none text-gray-500 hover:text-gray-200 border-transparent pr-6"
               >
-                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-sans">
+                <span className="ml-2 font-semibold text-sm tracking-wide truncate font-ubuntu">
                   Contact
                 </span>
               </a>
             </li>
-          </ul>
+          </Scrollspy>
         </div>
 
         <div className="grid place-items-center h-1/6">
