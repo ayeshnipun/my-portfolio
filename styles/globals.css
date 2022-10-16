@@ -27,8 +27,8 @@ a {
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("../assets/Ubuntu/Ubuntu-Medium.ttf");
+  font-family: 'Raleway';
+  src: url("../assets/Raleway/Raleway-VariableFont_wght.ttf");
 }
 
 @media (prefers-color-scheme: dark) {

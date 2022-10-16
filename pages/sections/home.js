@@ -15,10 +15,10 @@ const HomeSection = () => {
           ></img>
         </div>
 
-        <h1 className="uppercase text-5xl font-bold font-ubuntu">
+        <h1 className="uppercase text-5xl font-bold font-raleway">
           Ayesh <span style={{ color: "#06fefe" }}>Nipun</span>{" "}
         </h1>
-        <h1 className="text-4xl font-bold mt-3 font-ubuntu">
+        <h1 className="text-4xl font-bold mt-3 font-raleway">
           <Typewriter
             words={["Senior Software Engineer", "Microsoft Certified Azure Developer", "Gamer", "Freelancer", "Die-hard Marvel fan"]}
             loop={0}

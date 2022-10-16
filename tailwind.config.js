@@ -6,10 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        ubuntu: "Ubuntu"
-      }
+      fontFamily: {
+        ubuntu: "Ubuntu",
+        raleway: "Raleway",
+      },
     },
   },
   plugins: [],
-}
+};
